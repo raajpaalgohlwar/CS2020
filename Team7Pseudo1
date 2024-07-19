@@ -1,4 +1,5 @@
-# Lab 1 Pseudo-Code
+'''
+Lab 1 Pseudo-Code
 
 1. Initialize Variables
 - Initialize grossPay as a float.
@@ -14,10 +15,12 @@
 
 3. Calculate Results
 - Multiply hoursWorked and payRate to get grossPay.
-- Multiply grossPay with socSecTax to get netPay.
+- Multiple grossPay by socSecTax to get deduction.
+- Subtract deduction from grossPay to get netPay.
 
 4. Print Results with Informative Labels
-- Print weekly summary showing: hours worked, pay rate, gross pay, tax withheld and net pay.
+- Print weekly summary showing: hours worked, pay rate, gross pay, deduction and net pay.
+'''
 
 # Lab 1 Python Script
 
@@ -29,8 +32,8 @@ grossPay = 0.0
 netPay = 0.0
 
 # User Input
-payRate = float(input("What is your hourly pay rate? (in dollars per hour): "))
-hoursWorked = float(input("How many hours did you work this week?: "))
+payRate = float(input('What is your hourly pay rate? (in dollars per hour): '))
+hoursWorked = float(input('How many hours did you work this week?: '))
 
 # Calculate Results
 grossPay = payRate * hoursWorked
@@ -38,5 +41,5 @@ deduction = grossPay * socSecRate
 netPay = grossPay - deduction
 
 # Print Results
-print("")
-print("Below is your weekly summary\nHours Worked:\t", hoursWorked, "\nPay Rate:\t", payRate, "\nGross Pay:\t", grossPay, "\nTax Withheld:\t", deduction, "\nNet Pay:\t", netPay)
+print('')
+print('Below is your weekly summary\nHours Worked:\t', hoursWorked, '\nPay Rate:\t', payRate, '\nGross Pay:\t', grossPay, '\nDeduction:\t', deduction, '\nNet Pay:\t', netPay)
